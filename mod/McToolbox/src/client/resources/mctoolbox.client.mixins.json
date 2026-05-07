@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.mctoolbox.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"PieChartAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

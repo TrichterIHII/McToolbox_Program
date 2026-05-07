@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "mctoolbox",
+	"version": "${version}",
+	"name": "McToolbox",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mctoolbox/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mctoolbox.McToolbox"
+		],
+		"client": [
+			"net.mctoolbox.McToolboxClient"
+		],
+		"fabric-datagen": [
+			"net.mctoolbox.McToolboxDataGenerator"
+		]
+	},
+	"mixins": [
+		"mctoolbox.mixins.json",
+		{
+			"config": "mctoolbox.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
